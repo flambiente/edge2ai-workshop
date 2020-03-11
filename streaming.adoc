@@ -362,21 +362,9 @@ image::images/troubled_sensors.png[width=800]
 
 . Stop the *NiFi ExecuteProcess* simulator again.
 
-. To prepare for the SRM lab, create a new Kafka topic `global_iot` using SMM. Click on `topics` in the left menu, then `Add New` button, and add the following properties:
 
-+
-[source]
-----
-Topic Name:                            global_iot
-Partitions:                            5
-Availability:                          1
-Cleanup Policy:                        delete
-----
-+
-image::images/add_topic.png[width=800]
-
-[[lab_7, Lab 7]]
-== Lab 7 - Update the edge flows to perform additional processing on the data
+[[lab_6, Lab 6]]
+== Lab 6 - Update the edge flows to perform additional processing on the data
 
 In the previous lab we noticed that some of the sensors were sending erroneous measurements intermittently. If we let these measurements to be processed by our data flow we might have problems with the quality of our flow output and we want to avoid that.
 
