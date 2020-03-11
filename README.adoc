@@ -86,8 +86,6 @@ Time to start working and see some interesting stuff!
 Pick your lab and let's get started!
 
 * link:streaming.adoc[From Edge to Streams Processing]
-* link:spark_analytics.adoc[Spark and Fast Analytics with Kudu]
-* link:datascience.adoc[CDSW Experiments and Models]
 
 == Resources
   
