@@ -469,8 +469,8 @@ image::images/terminate_errors.png[width=800]
 
 . Stop the simulator once you have verified the data.
 
-[[lab_8, Lab 8]]
-== Lab 8 - Use NiFi to call the CDSW model endpoint and save to Kudu
+[[lab_7, Lab 7]]
+== Lab 7 - Use NiFi to call the CDSW model endpoint and save to Kudu
 
 In this lab, you will use NiFi to consume the Kafka messages containing the IoT data we ingested in the previous lab, call a CDSW model API endpoint to predict whether the machine where the readings came from is likely to break or not.
 
