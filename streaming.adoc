@@ -731,8 +731,8 @@ We're ready now to run and test our flow. Follow the steps below:
 +
 image::images/kudu_success.png[width=800]
 
-[[lab_9, Lab 9]]
-== Lab 9 - Check the data on Kudu
+[[lab_8, Lab 8]]
+== Lab 8 - Check the data on Kudu
 
 In this lab, you will run some SQL queries using the Impala engine and verify that the Kudu table is being updated as expected.
 
