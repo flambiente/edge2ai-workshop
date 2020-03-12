@@ -61,7 +61,7 @@ Cloudera Edge Flow Management gives you a visual overview of all MiNiFi agents i
 +
 image::images/cem_heartbeats.png[width=800]
 
-. You can then select the **Flow Designer** tab (image:images/flow_designer_icon.png[width=30]). To build a dataflow, select the desired class (`iot-1`) from the table and click *OPEN*.  Alternatively, you can double-click on the desired class.
+. You can then select the **Flow Designer** tab (image:images/flow_designer_minifi.png[width=30]). To build a dataflow, select the desired class (`iot-1`) from the table and click *OPEN*.  Alternatively, you can double-click on the desired class.
 
 . Add a _ConsumeMQTT_ Processor to the canvas, by dragging the processor icon to the canvas, selecting the _ConsumeMQTT_ processor type and clicking on the *Add* button. Once the processor is on the canvas, double-click it and configure it with below settings:
 +
