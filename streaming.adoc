@@ -312,7 +312,7 @@ image::images/terminate_publishkafka_relationship.png[width=600]
 
 . Start the input port and the two processors. Your canvas should now look like the one below:
 +
-image::images/publishKafka_flow.png[width=800]
+image::images/Lab4_11.png[width=800]
 
 . The only thing that remains to be configured now is to finally connect the "*from Gateway*" Input Port to the flow in the "*Processor Sensor Data*" group. To do that, first go back to the root canvas by clicking on the *NiFi Flow* link on the status bar.
 +
