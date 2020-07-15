@@ -764,4 +764,5 @@ In this lab, you will be challenged to run real time analytics over the telemetr
 
 ==== Publish data to a new kafka topics for analytics
 
-image::images/PublishKafkaAnalytics.png
+
+image::images/PublishKafkaAnalytics.png[width=800]
