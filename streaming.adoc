@@ -844,3 +844,11 @@ SELECT sensor_id, COUNT(*) AS unhealthy_events, MAX(proc_time) AS last_unhealthy
 ----
 
 image::images/flinkResult2.png[width=800]
+
+You can check Flink jobs anytime by accessing web console:
+
+image::images/flinkUI.png[width=800]
+
+= Congratulation!!!
+= You have completed all the Labs!!!
+
