@@ -766,9 +766,6 @@ In this lab, you will be challenged to run real time analytics over the telemetr
 
 Add a PublishKafkaRecord_2_0 processor with the following properties
 
-+
-*PROPERTIES* tab:
-+
 [source]
 ----
 Kafka Brokers:                         edge2ai-1.dim.local:9092
@@ -783,3 +780,11 @@ client.id:                             nifi-sensor-data
 and Automatically Terminate Relationships for success, as in the following picture.
 
 image::images/PublishKafkaAnalytics.png[width=800]
+
+==== Connect to SSH into the Cluster
+
+Use the following instruction for connecting to the Cluster's host
+
+image::images/ConnectSSH.png[width=800]
+
+==== Run SQL queries in Flink
