@@ -788,3 +788,16 @@ Use the following instruction for connecting to the Cluster's host
 image::images/ConnectSSH.png[width=800]
 
 ==== Run SQL queries in Flink
+
+Once connected, start Flink SQL client:
+
+[source]
+----
+flink-sql-client embedded
+----
+
+image::images/flikSQL.png[width=800]
+
+image::images/flikSQL2.png[width=800]
+
+
