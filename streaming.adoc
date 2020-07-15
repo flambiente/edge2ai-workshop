@@ -762,7 +762,7 @@ image::images/table_select.png[width=800]
 
 In this lab, you will be challenged to run real time analytics over the telemetry data using Flink and data published to Kafka.
 
-==== Publish data to a new kafka topics for analytics
+=== Publish data to a new kafka topics for analytics
 
 Add a PublishKafkaRecord_2_0 processor with the following properties
 
@@ -781,15 +781,15 @@ and Automatically Terminate Relationships for success, as in the following pictu
 
 image::images/PublishKafkaAnalytics.png[width=800]
 
-==== Connect to SSH into the Cluster
+=== Connect to SSH into the Cluster
 
 Use the following instruction for connecting to the Cluster's host
 
 image::images/ConnectSSH.png[width=800]
 
-==== Run SQL queries in Flink
+=== Run SQL queries in Flink
 
-Once connected, start Flink SQL client:
+==== Start Flink SQL client:
 
 [source]
 ----
@@ -800,7 +800,7 @@ image::images/flinkSQL.png[width=800]
 
 image::images/flinkSQL2.png[width=800]
 
-Create a stream data table in Flink:
+==== Create a stream data table in Flink:
 
 [source]
 ----
@@ -821,9 +821,9 @@ DESCRIBE sensors;
 
 image::images/flinkTable1.png[width=800]
 
-Run following Flink queries examples:
+=== Run following Flink queries examples:
 
-Filter events scored as unhealhy in the last 60 seconds:
+==== Filter events scored as unhealhy in the last 60 seconds:
 
 [source]
 ----
@@ -836,7 +836,7 @@ Results are refreshed each 5 seconds
 
 Press "Q" letter to exit the resultset panel and stop running query.
 
-Filter devices with two or more events scored as unhealhy in the last 60 seconds:
+==== Filter devices with two or more events scored as unhealhy in the last 60 seconds:
 
 [source]
 ----
@@ -850,5 +850,5 @@ You can check Flink jobs anytime by accessing web console:
 image::images/flinkUI.png[width=800]
 
 = Congratulation!!!
-= You have completed all the Labs!!!
+You have completed all the Labs!!!
 
