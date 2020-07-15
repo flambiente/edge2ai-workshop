@@ -764,5 +764,22 @@ In this lab, you will be challenged to run real time analytics over the telemetr
 
 ==== Publish data to a new kafka topics for analytics
 
+Add a PublishKafkaRecord_2_0 processor with the following properties
+
++
+*PROPERTIES* tab:
++
+[source]
+----
+Kafka Brokers:                         edge2ai-1.dim.local:9092
+Topic Name:                            iot_scored
+Record Reader:                         JsonTreeReader
+Record Writer:                         JsonRecordSetWriter
+Use Transactions:                      false
+Attributes to Send as Headers (Regex): schema.*
+client.id:                             nifi-sensor-data
+----
+
+and Automatically Terminate Relationships for success, as in the following picture.
 
 image::images/PublishKafkaAnalytics.png[width=800]
