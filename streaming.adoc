@@ -821,5 +821,12 @@ DESCRIBE sensors;
 
 image::images/flinkTable1.png[width=800]
 
+Run following Flink queries examples:
 
+Filter events scored as unhealhy in the last 60 seconds:
+
+[source]
+----
+SELECT sensor_id, COUNT(*) AS unhealthy_events FROM sensors WHERE is_healthy = 0 GROUP BY HOP(proc_time, INTERVAL '5' SECOND, INTERVAL '60' SECOND), sensor_id;
+----
 
