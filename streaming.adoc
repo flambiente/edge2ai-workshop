@@ -760,4 +760,9 @@ image::images/table_select.png[width=800]
 [[lab_9, Lab 9]]
 == Lab 9 - Flink - work in progress
 
-. In this lab, you will be challenged to run real time analytics over the telemetry data using Flink and data published to Kafka.
+In this lab, you will be challenged to run real time analytics over the telemetry data using Flink and data published to Kafka.
+
+==== Publish data to a new kafka topics for analytics
+
++
+image::images/PublishKafkaAnalytics.png[width=800]
