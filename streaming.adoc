@@ -12,6 +12,7 @@ In this workshop you'll implement a data pipeline, using MiNiFi and NiFi to inge
 * *Lab 6* - Use the Edge Flow Manager to update existing edge flows and perform additional processing on the edge
 * *Lab 7* - Use NiFi to process each record, calling the **Model endpoint** and save results to **Kudu**.
 * *Lab 8* - Check the data on Kudu.
+* *Lab 9* - Flink - work in progress.
 
 [[lab_1, Lab 1]]
 == Lab 1 - Apache NiFi: setup machine sensors simulator 
@@ -756,3 +757,5 @@ LIMIT 100;
 +
 image::images/table_select.png[width=800]
 
+[[lab_9, Lab 9]]
+== Lab 9 - Flink - work in progress
