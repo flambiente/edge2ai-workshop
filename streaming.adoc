@@ -796,9 +796,9 @@ Once connected, start Flink SQL client:
 flink-sql-client embedded
 ----
 
-image::images/flikSQL.png[width=400]
+image::images/flinkSQL.png[width=800]
 
-image::images/flikSQL2.png[width=400]
+image::images/flinkSQL2.png[width=800]
 
 
 
