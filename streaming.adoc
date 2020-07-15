@@ -814,6 +814,12 @@ Make sure sensors table is created:
 SHOW TABLES;
 ----
 
+[source]
+----
+DESCRIBE sensors;
+----
+
+image::images/flinkTable1.png[width=800]
 
 
 
