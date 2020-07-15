@@ -12,7 +12,7 @@ In this workshop you'll implement a data pipeline, using MiNiFi and NiFi to inge
 * *Lab 6* - Use the Edge Flow Manager to update existing edge flows and perform additional processing on the edge
 * *Lab 7* - Use NiFi to process each record, calling the **Model endpoint** and save results to **Kudu**.
 * *Lab 8* - Check the data on Kudu.
-* *Lab 9* - Flink - work in progress.
+* *Lab 9* - Performing Real Time Analytics with Flink.
 
 [[lab_1, Lab 1]]
 == Lab 1 - Apache NiFi: setup machine sensors simulator 
@@ -758,7 +758,7 @@ LIMIT 100;
 image::images/table_select.png[width=800]
 
 [[lab_9, Lab 9]]
-== Lab 9 - Flink - work in progress
+== Lab 9 - Performing Real Time Analytics with Flink
 
 In this lab, you will be challenged to run real time analytics over the telemetry data using Flink and data published to Kafka.
 
@@ -825,30 +825,30 @@ image::images/flinkTable1.png[width=800]
 
 ==== Filter events scored as unhealhy in the last 60 seconds:
 
-[source]
+[source, sql]
 ----
 SELECT sensor_id, COUNT(*) AS unhealthy_events FROM sensors WHERE is_healthy = 0 GROUP BY HOP(proc_time, INTERVAL '5' SECOND, INTERVAL '60' SECOND), sensor_id;
 ----
 
 image::images/flinkResult1.png[width=800]
 
+
 Results are refreshed each 5 seconds
 
-Press "Q" letter to exit the resultset panel and stop running query.
+Press *Q* letter to exit the resultset panel and stop running query.
 
 ==== Filter devices with two or more events scored as unhealhy in the last 60 seconds:
 
-[source]
+[source, sql]
 ----
 SELECT sensor_id, COUNT(*) AS unhealthy_events, MAX(proc_time) AS last_unhealthy FROM sensors WHERE is_healthy = 0 GROUP BY HOP(proc_time, INTERVAL '5' SECOND, INTERVAL '60' SECOND), sensor_id HAVING COUNT(*) >= 2;
 ----
 
-image::images/flinkResult2.png[width=800]
+image::images/flinkResult3.png[width=800]
 
 You can check Flink jobs anytime by accessing web console:
 
 image::images/flinkUI.png[width=800]
 
-= Congratulation!!!
-You have completed all the Labs!!!
+= Congratulation!!! You have completed all the Labs!!!
 
